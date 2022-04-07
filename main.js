@@ -54,7 +54,8 @@ const team = [
   
 
   for (let i = 0; i < team.length; i++) {
+       document.querySelector('.users').insertAdjacentHTML("beforeend" , `<img src="${team[i].image}" alt=""><br>`)
        document.querySelector('.users').insertAdjacentHTML("beforeend" , `${team[i].name}<br>`)
        document.querySelector('.users').insertAdjacentHTML("beforeend" , `${team[i].role}<br>`)
-       document.querySelector('.users').insertAdjacentHTML("beforeend" , `${team[i].image}<br>`)
+       
   }
